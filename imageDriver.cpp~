@@ -1,0 +1,15 @@
+#include <iostream>
+#include "Image.h"
+#include <string>
+using namespace std;
+
+int main(){
+
+  Image img("newpic.ppm");
+
+  img.zeroBlue();
+
+  img.print();
+
+  return 0;
+}

@@ -1,0 +1,23 @@
+Reading, storing, and manipulating .ppm files using arrays.
+
+The Image class is designed to read information from a .ppm file and store it in an array.
+The Image class also contains a number of methods that demonstrate how .ppm files can be 
+manipulated using arrays.
+
+The executable, imageDriver removes all of the blue color from a specified .ppm file. It
+does this by reading the file into an Image object and setting the blue value of all 
+pixels to zero. You can call the executable with a .ppm file name as an argument:
+ 
+    ./imageDriver img.ppm
+
+You can save the output of imageDriver as a new .ppm file by piping the output 
+to a new file:
+   
+    ./imageDriver img.ppm > newimg.ppm
+
+This executable will run on on both Mac and Linux machines, but will require a way to 
+convert and display .ppm images. The program does not properly run when compiled on a 
+Windows machine as of now.
+
+
+
